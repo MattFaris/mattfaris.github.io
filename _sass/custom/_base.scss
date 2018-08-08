@@ -1,3 +1,5 @@
+$break-large: 600px;
+
 main {
   display: flex;
   align-items: center;
@@ -13,7 +15,10 @@ body {
   background-color: #0102ac;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: center;
+  @media screen and (max-width: $break-large) {
+  	background-size: 170%;
+  }
 }
 
 @-webkit-keyframes background-animate {
