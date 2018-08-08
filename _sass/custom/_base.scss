@@ -1,0 +1,61 @@
+main {
+  display: flex;
+  align-items: center;
+
+  background: transparentize(#000080, .1)  url("/assets/img/favicon.ico");
+  background-position: center;
+  background-size: 3px;
+  background-blend-mode: saturation;
+}
+
+body {
+  background: #0102ac url("/assets/img/bsod.jpg");
+  background-color: #0102ac;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@-webkit-keyframes background-animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-moz-keyframes background-animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-ms-keyframes background-animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-o-keyframes background-animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@keyframes background-animate {
+    from {
+        background-position: 0 500px;
+    }
+    to {
+        background-position: 0 0;
+    }
+}

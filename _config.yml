@@ -17,8 +17,10 @@ title: Matt Faris
 email: matthewlfaris@gmail.com
 description: Full-Stack Developer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mattfaris.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/assets/img/favicon.ico"
 github_username: mattfaris
+github_userid: "42158091"
 linkedin_username: mattfaris
 
 # Build settings

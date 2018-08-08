@@ -1,8 +1,41 @@
+$primary-color: beige;
+$primary-border-color: beige;
+$primary-link-color: bisque;
+
 .home {
-  text-align: center;
+	text-align: center;
+	color: $primary-color;
 }
 
 .home img {
-  max-width: 150px;
-  border-radius: 50%;
+	max-width: 150px;
+	border-radius: 50%;
+	border: $primary-border-color solid 2px;
+}
+
+.home h1 {
+	margin-bottom: -10px;
+	font-weight: 700;
+    font-size: 40px;
+}
+
+.home h2 {
+    font-weight: 200;
+}
+
+.home ul {
+	margin-bottom: 10px;
+}
+
+.home .svg-icon {
+    fill: $primary-link-color;
+    vertical-align: baseline;
+}
+
+.home a {
+    color: $primary-link-color;
+}
+
+.home a:visited {
+    color: $primary-link-color;
 }
