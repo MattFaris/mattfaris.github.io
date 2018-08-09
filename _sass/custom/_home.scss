@@ -1,10 +1,7 @@
-$primary-color: beige;
 $primary-border-color: beige;
-$primary-link-color: beige;
 
 .home {
 	text-align: center;
-	color: $primary-color;
 }
 
 .home img {
@@ -25,17 +22,4 @@ $primary-link-color: beige;
 
 .home ul {
 	margin-bottom: 10px;
-}
-
-.home .svg-icon {
-    fill: $primary-link-color;
-    vertical-align: baseline;
-}
-
-.home a {
-    color: $primary-link-color;
-}
-
-.home a:visited {
-    color: $primary-link-color;
 }

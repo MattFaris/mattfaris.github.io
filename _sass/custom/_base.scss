@@ -1,21 +1,70 @@
+$primary-color: #f5f5dc;
+$primary-link-color: #f5f5dc;
+$primary-hover-link-color: transparentize($primary-link-color, .3);
+$primary-background-color: #0102ac;
+
+$secondary-color: #333333;
+$secondary-link-color: #0102ac;
+$secondary-hover-link-color: transparentize($secondary-link-color, .3);
+$secondary-background-color: #f5f5dc;
+
+
 $break-large: 600px;
 
 main {
   display: flex;
   align-items: center;
 
-  background: transparentize(#000080, .25)  url("/assets/img/favicon.ico");
+  background: $secondary-background-color;
+}
+
+main {
+	color: $secondary-color;
+}
+
+main .svg-icon {
+    fill: $secondary-link-color;
+    vertical-align: baseline;
+}
+
+main a, main a:visited {
+    color: $secondary-link-color;
+}
+
+main a:hover {
+    color: $secondary-hover-link-color;
+}
+
+.dotted {
+  background: transparentize($primary-background-color, .25)  url("/assets/img/favicon.ico");
   background-position: center;
   background-size: 3px;
   background-blend-mode: saturation;
 }
 
+.dotted {
+	color: $primary-color;
+}
+
+.dotted .svg-icon {
+    fill: $primary-link-color;
+    vertical-align: baseline;
+}
+
+.dotted a, .dotted a:visited {
+    color: $primary-link-color;
+}
+
+.dotted a:hover {
+    color: $primary-hover-link-color;
+}
+
 body {
-  background: #0102ac url("/assets/img/bsod.jpg");
-  background-color: #0102ac;
+  background: $primary-background-color url("/assets/img/bsod.jpg");
+  background-color: $primary-background-color;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: center;
+  background-size: 100%;
   @media screen and (max-width: $break-large) {
   	background-size: 170%;
   }
