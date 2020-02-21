@@ -29,20 +29,10 @@ main .svg-icon {
 
 main a, main a:visited {
     color: $secondary-link-color;
-
-    .svg-icon {
-        -webkit-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
-    }
 }
 
 main a:hover {
     color: $secondary-hover-link-color;
-
-    .svg-icon {
-        -webkit-transform: scale(1.4);
-        transform: scale(1.4);
-    }
 }
 
 .dotted {
@@ -67,6 +57,20 @@ main a:hover {
 
 .dotted a:hover {
     color: $primary-hover-link-color;
+}
+
+a, a:visited {
+    .svg-icon {
+        -webkit-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+    }
+}
+
+a:hover {
+    .svg-icon {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
 }
 
 body {
