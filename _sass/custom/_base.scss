@@ -39,7 +39,7 @@ main a:hover {
 .dotted {
     background: transparentize(black, .25)  url("/assets/img/favicon.ico");
     background-position: center;
-    background-size: 3px;
+    background-size: 2.2px;
     background-blend-mode: saturation;
     animation: background-animate 3s linear infinite;
 }
