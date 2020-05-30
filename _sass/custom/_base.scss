@@ -79,7 +79,7 @@ body {
     background-color: $primary-background-color;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: $break-large;	
+    background-size: $break-large;
 
     @media screen and (max-width: $break-large) {
         background-size: 100%;
@@ -97,7 +97,7 @@ body {
         background-position: 0 0;
     }
     to {
-        background-position: 500px 0;
+        background-position: 2.2px 0;
     }
 }
 
@@ -106,7 +106,7 @@ body {
         background-position: 0 0;
     }
     to {
-        background-position: 500px 0;
+        background-position: 2.2px 0;
     }
 }
 
@@ -115,7 +115,7 @@ body {
         background-position: 0 0;
     }
     to {
-        background-position: 500px 0;
+        background-position: 2.2px 0;
     }
 }
 
@@ -124,13 +124,13 @@ body {
         background-position: 0 0;
     }
     to {
-        background-position: 500px 0;
+        background-position: 2.2px 0;
     }
 }
 
 @keyframes background-animate {
     from {
-        background-position: 0 500px;
+        background-position: 0 2.2px;
     }
     to {
         background-position: 0 0;
