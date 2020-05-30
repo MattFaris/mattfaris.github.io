@@ -9,17 +9,18 @@ $secondary-hover-link-color: transparentize($secondary-link-color, .3);
 $secondary-background-color: #f5f5dc;
 
 $break-small: 400px;
-$break-large: 700px;
+$break-medium: 700px;
+$break-large: 1000px;
 
 main {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 
-  background: $secondary-background-color;
+    background: $secondary-background-color;
 }
 
 main {
-	color: $secondary-color;
+    color: $secondary-color;
 }
 
 main .svg-icon {
@@ -36,14 +37,14 @@ main a:hover {
 }
 
 .dotted {
-  background: transparentize(black, .25)  url("/assets/img/favicon.ico");
-  background-position: center;
-  background-size: 3px;
-  background-blend-mode: saturation;
+    background: transparentize(black, .25)  url("/assets/img/favicon.ico");
+    background-position: center;
+    background-size: 3px;
+    background-blend-mode: saturation;
 }
 
 .dotted {
-	color: $primary-color;
+    color: $primary-color;
 }
 
 .dotted .svg-icon {
@@ -74,17 +75,21 @@ a:hover {
 }
 
 body {
-  background: $primary-background-color url("/assets/img/bsod.jpg");
-  background-color: $primary-background-color;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;	
-  @media screen and (max-width: $break-small) {
-  	background-size: 170%;
-  }
-  @media screen and (max-width: $break-large) {
-  	background-size: 700px;
-  }
+    background: $primary-background-color url("/assets/img/bsod.jpg");
+    background-color: $primary-background-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: $break-large;	
+
+    @media screen and (max-width: $break-large) {
+        background-size: 100%;
+    }
+    @media screen and (max-width: $break-medium) {
+        background-size: $break-medium;
+    }
+    @media screen and (max-width: $break-small) {
+        background-size: 170%;
+    }
 }
 
 @-webkit-keyframes background-animate {
