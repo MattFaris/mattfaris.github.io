@@ -8,8 +8,8 @@ $secondary-link-color: #0102ac;
 $secondary-hover-link-color: transparentize($secondary-link-color, .3);
 $secondary-background-color: #f5f5dc;
 
-
-$break-large: 600px;
+$break-small: 400px;
+$break-large: 700px;
 
 main {
   display: flex;
@@ -78,9 +78,12 @@ body {
   background-color: $primary-background-color;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  @media screen and (max-width: $break-large) {
+  background-size: 100%;	
+  @media screen and (max-width: $break-small) {
   	background-size: 170%;
+  }
+  @media screen and (max-width: $break-large) {
+  	background-size: 700px;
   }
 }
 
