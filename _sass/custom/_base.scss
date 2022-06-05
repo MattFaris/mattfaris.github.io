@@ -8,6 +8,8 @@ $secondary-link-color: #0102ac;
 $secondary-hover-link-color: transparentize($secondary-link-color, .3);
 $secondary-background-color: #f5f5dc;
 
+$dark-blue: #000014;
+
 $break-small: 400px;
 $break-medium: 700px;
 $break-large: 1000px;
@@ -37,11 +39,11 @@ main a:hover {
 }
 
 .dotted {
-    background: transparentize(black, .25)  url("/assets/img/favicon.ico");
+    background: transparentize($dark-blue, .9)  url("/assets/img/favicon.ico");
     background-position: center;
-    background-size: 2.2px;
-    background-blend-mode: saturation;
-    animation: background-animate 3s linear infinite;
+    background-size: 2px;
+    background-blend-mode: darken;
+    animation: background-animate 64s linear infinite;
 }
 
 .dotted {
@@ -98,7 +100,7 @@ body {
         background-position: 0 0;
     }
     to {
-        background-position: 2.2px 0;
+        background-position: 2px 0;
     }
 }
 
@@ -107,7 +109,7 @@ body {
         background-position: 0 0;
     }
     to {
-        background-position: 2.2px 0;
+        background-position: 2px 0;
     }
 }
 
@@ -116,7 +118,7 @@ body {
         background-position: 0 0;
     }
     to {
-        background-position: 2.2px 0;
+        background-position: 2px 0;
     }
 }
 
@@ -125,13 +127,13 @@ body {
         background-position: 0 0;
     }
     to {
-        background-position: 2.2px 0;
+        background-position: 2px 0;
     }
 }
 
 @keyframes background-animate {
     from {
-        background-position: 0 2.2px;
+        background-position: 0 2px;
     }
     to {
         background-position: 0 0;
