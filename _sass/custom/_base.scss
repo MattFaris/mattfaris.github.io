@@ -39,7 +39,7 @@ main a:hover {
 }
 
 .dotted {
-    background: transparentize($dark-blue, .9)  url("/assets/img/favicon.ico");
+    background: transparentize($dark-blue, .1)  url("/assets/img/favicon.ico");
     background-position: center;
     background-size: 2px;
     background-blend-mode: darken;
